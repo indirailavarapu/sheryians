@@ -1,0 +1,78 @@
+#container_big{
+    width: 28%;
+    height: 70vh;
+    background-color:rgb(18, 19, 20);
+    margin-top: 190px;
+    margin-left: 480px;
+}
+#lion{
+    width: 25px;
+    height: 25px;
+}
+#heading1{
+    color: white;
+    position: relative;
+    left: 20px;
+   /* margin-top: 20px;
+    float: left; */
+    
+    font-size: 2vw;
+}
+#button-group{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.button{
+    position: relative;
+    size: 10px;
+    top: 28px;
+    left: 10px;
+    border-radius: none;
+    outline: none;
+}
+#google-button{
+    width: 90%;
+    height: 8vh;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    border-radius: 24px;
+    font-style: 2vw;
+}
+.icon{
+    width: 10%;
+    float: left;
+}
+#create-account-button{
+    width: 90%;
+    height: 8vh;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    border-radius: 24px;
+    font-style: 2vw;
+    margin-top: 10px;
+}
+#icon{
+    width: 9%;
+    height: 10vh;
+    float: left;
+    height: 5vh;
+}
+#input-container{
+    margin-top: 80px;
+    /* width: 100%; */
+}
+#mobile-number{
+    width: 90%;
+    margin-top: 2px;
+    height: 6vh;
+    color: grey;
+    background-color: white;
+}
+
+.separator{
+    text-align: center;
+    margin-top:60px;
+}

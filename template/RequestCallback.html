@@ -1,0 +1,47 @@
+{% load static %}
+
+{% block body %}
+<nav id="nav_bar">
+    <img src="../static/logo-removebg-preview.png" id="lion">
+    <h1 id="heading">sheryians coding school</h1>
+    <a class="anchors" href="{% url 'app1:home' %}">Home</a>
+    <a class="anchors" href="{% url 'app1:Courses' %}">Courses</a>
+    <a class="anchors" href="{% url 'app1:Bootcamp' %}">Bootcamp(Kodr)</a>
+    <a class="anchors" href="{% url 'app1:RequestCallback' %}">RequestCallBack</a>
+    <button id="signin_button" class="buttons"><a class="anchor_buttons" href="{% url 'app1:Signin' %}">Signin</a></button>
+</nav>
+<div class="container">
+    <h1>Request a Callback</h1>
+    <p>Fill the form below to request a callback from our team.</p>
+
+    <form id="callbackForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <div class="phone-input">
+                <img src="../static/indian.png" id="flag" alt="India Flag"> 
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="datetime">Select Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% endblock body %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static 'RequestCallback.css' %}">
+<script src="{% static 'RequestCallback.js' %}"></script>
+
+{% endblock css %}

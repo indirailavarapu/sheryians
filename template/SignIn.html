@@ -1,0 +1,61 @@
+{% load static %}
+
+{% block body %}
+<nav id="nav_bar">
+    <img src="../static/logo-removebg-preview.png" id="lion">
+    <h1 id="heading">sheryians coding school</h1>
+    <a class="anchors" href="{% url 'app1:home' %}">Home</a>
+    <a class="anchors" href="{% url 'app1:Courses' %}">Courses</a>
+    <a class="anchors" href="{% url 'app1:Bootcamp' %}">Bootcamp(Kodr)</a>
+    <a class="anchors" href="{% url 'app1:RequestCallback' %}">RequestCallBack</a>
+    <button id="signin_button" class="buttons"><a class="anchor_buttons" href="{% url 'app1:Signin' %}">Signin</a></button>
+</nav>
+
+
+
+<div id="container_big">
+    <h1 id="heading1">Sign In</h1>
+    <div id="button-group">
+        <button id="phone-button" >Phone</button>
+        <button id="email-button" >Email</button>
+    </div>
+    <div id="input-container">
+        <label for="mobile-number">Mobile Number</label><br>
+        <input type="text" id="mobile-number" placeholder="Enter your mobile number" >
+    </div>
+    <div class="separator">
+        <span>Or</span>
+    </div>
+    <button id="google-button">
+        <img src="../../../static/google.png " alt="Google Icon" class="icon"> Continue with Google
+    </button>
+    <button id="create-account-button">
+        <img src="../../../static/headicon.png " alt="Head Icon" id="icon"> Create an Account
+    </button>
+</div>
+
+
+<!-- <section class="signin">
+    <h1>Sign In</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Sign In</button>
+    </form>
+</section> -->
+
+{% endblock body %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static 'SignIn.css' %}">
+<script src="{% static 'SignIn.js' %}"></script>
+
+
+{% endblock css %}

@@ -1,0 +1,79 @@
+#lion{
+    width: 25px;
+    height: 30px;
+    float: left;
+}
+#boot{
+    position: relative;
+    top: 10px;
+    left: 120px;
+    float: left;
+}
+#boot_image{
+    width: 50%;
+    margin-top: 100px;
+    background-color: rgba(12,12,12,255);
+
+}
+#boot_id{
+    float: left;
+    height: 70vh;
+    width: 80%;
+}
+#free_foot{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 60px;
+    float: left;
+}
+#foot_id1{
+    width: 80%;
+    height: 90vh;
+    position: relative;
+}
+#last{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 200px;
+    float: left;
+}
+#last_image{
+    width: 70%;
+    height: 75vh;
+    position: relative;
+    top: 30px;
+}
+#dom_id{
+    position: relative;
+    top: 200px;
+}
+#detail_id{
+    position: relative;
+    top: 160px;
+    height: 650px;
+}
+#detail{
+    width: 100%;
+    position: relative;
+    height: 90vh;
+    top: 50px;
+}
+#next_id{
+    position: relative;
+    height: 650px;
+}
+#next{
+    width: 1250px;
+    position: relative;
+    height: 90vh;
+}
+#footer_id3{
+    width: 100%;
+    position: relative;
+}
+#foot_image3{
+    width: 100%;
+    height: 100vh;
+}

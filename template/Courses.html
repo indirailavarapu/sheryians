@@ -1,0 +1,45 @@
+
+{% load static %}
+
+<!-- {% block title %}
+Courses
+{% endblock title %} -->
+
+{% block body %}
+<nav id="nav_bar">
+    <img src="../static/logo-removebg-preview.png" id="lion">
+    <h1 id="heading">sheryians coding school</h1>
+    <a class="anchors" href="{% url 'app1:home' %}">Home</a>
+    <a class="anchors" href="{% url 'app1:Courses' %}">Courses</a>
+    <a class="anchors" href="{% url 'app1:Bootcamp' %}">Bootcamp(Kodr)</a>
+    <a class="anchors" href="{% url 'app1:RequestCallback' %}">RequestCallBack</a>
+    <button id="signin_button" class="buttons"><a class="anchor_buttons" href="{% url 'app1:Signin' %}">Signin</a></button>
+</nav>
+<div id="course_division">
+    <pre id="pre_one">
+    We 're not a <span id="span_one" class="span_color" >course</span> 
+    <span id="span_one" class="span_color" >factory</span>
+</pre>
+</div>
+<h1 id="heading1">We focuus on courses that really help.</h1>
+<h2 id="heading2">Courses which do work⬇</h2>
+<br><br><br><br><br>
+    <div id="main_division1">
+        <div id="div_head1"> <img src="../static/image1.jpg"  id="img1"><button id="view_button1">View Details</button></div>
+        <div id="div_head1"><img src="../static/image2.png"  id="img2"><button id="view_button1">View Details</button></div>
+        <div id="div_head1"><img src="../static/image3.png" id="img3" ><button id="view_button1">View Details</button></div>
+   </div>
+   <div id="main_division2">
+    <div id="div_head2"><img src="../static/image4.png" id="img4"><button id="view_button2">View Details</button></div>
+    <div id="div_head2"><img src="../static/image5.png" id="img5"><button id="view_button2">View Details</button></div>
+   </div>
+   <div id="footer">
+    <img src="../static/footer image.png" id="foot_image">
+   </div>
+
+{% endblock body %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static 'courses.css' %}">
+{% endblock css %}

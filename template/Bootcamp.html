@@ -1,0 +1,43 @@
+{% load static %}
+
+{% block body %}
+<nav id="nav_bar">
+    <img src="../static/logo-removebg-preview.png" id="lion">
+    <h1 id="heading">sheryians coding school</h1>
+    <a class="anchors" href="{% url 'app1:home' %}">Home</a>
+    <a class="anchors" href="{% url 'app1:Courses' %}">Courses</a>
+    <a class="anchors" href="{% url 'app1:Bootcamp' %}">Bootcamp(Kodr)</a>
+    <a class="anchors" href="{% url 'app1:RequestCallback' %}">RequestCallBack</a>
+    <button id="signin_button" class="buttons"><a class="anchor_buttons" href="{% url 'app1:Signin' %}">Signin</a></button>
+</nav>
+<div id="boot_image">
+    <img src="../static/boot.png" id="boot_id">
+</div>
+<div id="boot">
+    <iframe width="560" height="330" src="https://www.youtube.com/embed/pOGLAlGCKFE?si=fJmy7tN2MB4vC86T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div id="free_foot">
+    <img src="../static/free.png" id="foot_id1">
+</div>
+<div id="last">
+    <img src="../static/last.png" id="last_image">
+</div>
+<div id="dom_id">
+    <img src="../static/dom.png">
+</div>
+<div id="detail_id">
+    <img src="../static/detail.png" id="detail">
+</div>
+<div id="next_id">
+    <img src="../static/next.png" id="next">
+</div>
+<div id="footer_id3">
+    <img src="../static/footer image.png" id="foot_image3">
+   </div>
+{% endblock body %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static 'Bootcamp.css' %}">
+
+{% endblock css %}

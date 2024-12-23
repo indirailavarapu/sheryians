@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+    <nav id="nav_bar">
+        <!-- <img id="lion_image" src="{% static 'lion.jpg' %}" alt=""> -->
+        <img src="../static/logo-removebg-preview.png" id="lion">
+        <h1 id="heading">sheryians coding school</h1>
+        <a class="anchors" href="{% url 'app1:home' %}">Home</a>
+        <a class="anchors" href="{% url 'app1:Courses' %}">Courses</a>
+        <a class="anchors" href="{% url 'app1:Bootcamp' %}">Bootcamp(Kodr)</a>
+        <a class="anchors" href="{% url 'app1:RequestCallback' %}">RequestCallBack</a>
+        <button id="signin_button" class="buttons"><a class="anchor_buttons" href="{% url 'app1:Signin' %}">Signin</a></button>
+    </nav>
+    <pre id="pre_one">
+            We only <span id="span_one" class="span_color" >teach</span> 
+          what we are really 
+            really <i>good</i> at.
+    </pre>
+    <button id="check_button" class="buttons"><a class="anchor_buttons" href="">Check Courses-Make an impact</a></button>
+    <div id="div">
+        <pre id="pre_two">
+            Get ready to <span class="span_color">accelerate your
+            carrer</span> with customarized courses
+            and leave your mark in the tech
+            industry
+        </pre>
+    </div>
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-value">25k+</span>
+            <span class="stat-label">Students taught</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">20k+</span>
+            <span class="stat-label">Instructors</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value">431k+</span>
+            <span class="stat-label">YouTube Subs.</span>
+        </div>
+    </div>
+    <h1 style="text-align: center; font-size: 50px;">We do Whatever it takes to help you <span class="span_color"> <br>understand the concepts</span></h1>
+    <div class="center-container">
+        <!-- <h1 class="heading">
+            We do Whatever it takes to help you<br>understand the concepts
+        </h1> -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/60SRAWmMXyc?si=F4_N28_fLuEskVFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <button id="button_heading">Explore free learning</button>
+    <h1 id="course_heading">Courses Offered</h1>
+    <br><br>
+   <div id="main_division1">
+    <div id="div_head1"> <img src="../static/image1.jpg"  id="img1"><button id="view_button1">View Details</button></div>
+    <div id="div_head1"><img src="../static/image2.png"  id="img2"><button id="view_button1">View Details</button></div>
+    <div id="div_head1"><img src="../static/image3.png" id="img3" ><button id="view_button1">View Details</button></div>
+   </div>
+   <div id="main_division2">
+    <div id="div_head2"><img src="../static/image4.png" id="img4"><button id="view_button2">View Details</button></div>
+    <div id="div_head2"><img src="../static/image5.png" id="img5"><button id="view_button2">View Details</button></div>
+   </div>
+   <div id="footer_heading">
+    <h1>Top<span id="comp_color"> companies</span> our students <br> working with</h1>
+   </div>
+   
+   <div id="foot_img">
+    <img src="../static/7.jpg" id="foot_size">
+   </div>
+   <button id="button_heading1">Explore Courses</button>
+   <div id="footer">
+    <img src="../static/footer image.png" id="foot_image">
+   </div>
+</body>
+</html>
